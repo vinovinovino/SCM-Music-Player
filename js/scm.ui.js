@@ -7,9 +7,6 @@ var skin = ko.observable('skins/tunes/skin.css'),
 	display = ko.computed(function(){
 		return SCM.message() || SCM.current().title();
 	}),
-  showAd = ko.computed(function(){
-    return isSelf && showPlaylist();
-  });
 	timer = (function(){
 		function timeNo(no){
 			no = parseInt(no);
@@ -34,7 +31,6 @@ var skin = ko.observable('skins/tunes/skin.css'),
 		togglePlaylist:togglePlaylist,
 		display:display,
 		timer:timer,
-    showAd:showAd
 	});
 
 	SCM.config = function(data){
