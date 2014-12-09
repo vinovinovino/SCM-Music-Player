@@ -9,7 +9,7 @@
 		scm = current.getAttribute('src').replace(/script\.js.*/g,'scm.html?03022013')+'#'+dest,
 		scmHost = scm[0] == '/' ? destHost : scm.substr(0,scm.indexOf('/',10)),
 		isOutside = !hasFrame || location.href.indexOf("scmplayer=true")>0,
-		exclude = new RegExp(current.getAttribute('data-exclude') || 'ajax');
+		exclude = new RegExp(current.getAttribute('data-exclude') || 'ajax'),
 		postMessage = function(msg){
 			return window.top.document.getElementById('scmframe')
 				.contentWindow.postMessage(msg,scmHost);
