@@ -28,7 +28,8 @@ define(['jquery','song'],function($,Song){
 
 	return {
 		load:function(url, req, callback, config){
-			load('http://api.soundcloud.com/resolve?url=' + url,callback);
+			// Soundcloud may return a 401 Unauthorized if a consumer key is not provided
+			load('http://api.soundcloud.com/resolve?consumer_key=' + consumer_key + '&url=' + url,callback);
 		}
 	}
 });
