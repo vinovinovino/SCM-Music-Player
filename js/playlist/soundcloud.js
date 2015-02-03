@@ -16,6 +16,9 @@ define(['jquery','song'],function($,Song){
 		},
 		done = function(data,callback){
 			callback($.map(data,function(track){
+				if (!track.streamable) {  // Sometimes tracks get pulled
+					return new Song({});  // Return a blank, avoids adding to Playlist
+				}
 				var url = track.stream_url;
 				url += url.match(/[a-z]*\?/i) ? '&':'?';
 				url += 'consumer_key=' + consumer_key;
