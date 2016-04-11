@@ -1,0 +1,107 @@
+#player #play {
+  background: url(http://static.tumblr.com/qft2cvq/WZEmz19ge/base_2.png);
+}
+
+#player #previous {
+  left: 26px !important;
+}
+
+#player #baseLeft {
+  width: 93px;
+}
+
+#player #next {
+  left: 52px;
+}
+
+#player #baseRight {
+  width: 145px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-button:start:decrement ::-webkit-scrollbar-button:end:increment {
+  display: block;
+  height: 0;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  -webkit-border-radius: 0;
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 50px;
+  background-color: #f8f8f8;
+  -webkit-border-radius: px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 50px;
+  background-color: #f8f8f8;
+  -webkit-border-radius: px;
+}
+
+#player {
+  left: 5px !important;
+  width: 130px;
+}
+
+#player #miniBaseCenter {
+  left: 5px;
+  width: 130px;
+  position: absolute;
+  height: 25px;
+}
+
+#player,#player a {
+  font-size: 0px !important;
+  color: #fff !important;
+}
+
+#player #title {
+  left: 20000px;
+}
+
+#player #volume {
+  right: 20000px;
+  width: 65px;
+}
+
+#player #seeker {
+  right: 20000px;
+}
+
+#player #volumeSlider {
+  width: 8px;
+}
+
+#player #timer {
+  left: 20000px;
+}
+
+#player #tooltip {
+  left: 20000px;
+}
+
+#player .button {
+  width: 28px;
+}
+
+#player #play, #player #pause {
+  left: 2px !important;
+}
+
+#player #play, #player #pause {
+  left: 28px;
+}
+
+#player .mainImage {
+  background: url(http://static.tumblr.com/qft2cvq/SpTmz18e5/base_3.png);
+}
